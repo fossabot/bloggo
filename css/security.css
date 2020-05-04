@@ -1,0 +1,10 @@
+#hbe-security .hbe-input-container {
+  margin: 50px auto;
+  text-align: center;
+}
+#hbe-security .hbe-input-container .bottom-line {
+  background: $color-accent-1;
+}
+#hbe-security .hbe-input-container label {
+  font-size: 0.9rem;
+}

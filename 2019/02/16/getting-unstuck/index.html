@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Estimated Reading Time: 5 Minutes Disclaimer: This blog post is mostly for my own reference, and to practice technical writing. Have you ever gotten stuck when trying to tackle something entirely new?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Getting Unstuck">
+<meta property="og:url" content="https://mlyzhng.com/2019/02/16/getting-unstuck/index.html">
+<meta property="og:site_name" content="mlyzhng">
+<meta property="og:description" content="Estimated Reading Time: 5 Minutes Disclaimer: This blog post is mostly for my own reference, and to practice technical writing. Have you ever gotten stuck when trying to tackle something entirely new?">
+<meta property="article:published_time" content="2019-02-16T20:23:02.000Z">
+<meta property="article:modified_time" content="2020-02-05T05:52:23.369Z">
+<meta property="article:author" content="Emily Zhang">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="public">
+<meta property="article:tag" content="software engineering">
+<meta property="article:tag" content="learning how to learn">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/android.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple.png">
+          
+        
+    
+    <!-- title -->
+    <title>Getting Unstuck</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/tags/blog">blog</a></li>
+         
+          <li><a href="/art/">art</a></li>
+         
+          <li><a href="/aquaria/">aquaria</a></li>
+         
+          <li><a href="/search/">🔍</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        <!-- 
+        <li><a class="icon" href="/2019/02/16/feb-2019/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2019/01/18/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+         -->
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">previous post</span>
+      <span id="i-next" class="info" style="display:none;">next post</span>
+      <span id="i-top" class="info" style="display:none;">back to top</span>
+      <span id="i-share" class="info" style="display:none;">share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mlyzhng.com/2019/02/16/getting-unstuck/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&text=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&is_video=false&description=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Getting Unstuck&body=Check out this article: https://mlyzhng.com/2019/02/16/getting-unstuck/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&name=Getting Unstuck&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Run-test-code"><span class="toc-number">1.</span> <span class="toc-text">1. Run test code.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Shamelessly-search-everything"><span class="toc-number">2.</span> <span class="toc-text">2. Shamelessly search everything.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Look-at-existing-examples"><span class="toc-number">3.</span> <span class="toc-text">3. Look at existing examples.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Read-the-documentation"><span class="toc-number">4.</span> <span class="toc-text">4. Read the documentation.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Read-the-code"><span class="toc-number">5.</span> <span class="toc-text">5. Read the code.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-Ask-for-help"><span class="toc-number">6.</span> <span class="toc-text">6. Ask for help.</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
+    <header>
+      
+    <h1 class="posttitle" itemprop="name headline">
+        Getting Unstuck
+    </h1>
+
+
+
+      <div class="meta">
+        <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">mlyzhng</span>
+        </span>
+        
+    <div class="postdate">
+      
+        <time datetime="2019-02-16T20:23:02.000Z" itemprop="datePublished">2019-02-16</time>
+        
+      
+    </div>
+
+
+        
+
+        
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/blog/" rel="tag">blog</a>, <a class="tag-link" href="/tags/learning-how-to-learn/" rel="tag">learning how to learn</a>, <a class="tag-link" href="/tags/public/" rel="tag">public</a>, <a class="tag-link" href="/tags/software-engineering/" rel="tag">software engineering</a>
+    </div>
+
+
+      </div>
+    </header>
+  
+  
+
+  <div class="content" itemprop="articleBody">
+    <p><strong>Estimated Reading Time: 5 Minutes</strong></p>
+<p><em>Disclaimer: This blog post is mostly for my own reference, and to practice technical writing.</em></p>
+<p>Have you ever gotten stuck when trying to tackle something entirely new? You have a vague picture of where you are and where you want to be, but everything else in between feels like an ugly black box full of hidden complexity that you don’t understand (even attempting to read a full sentence of documentation can be a trying task if you don’t understand all the unfamiliar terminology being used).</p>
+<p>That’s why it’s important to learn how to learn – to effectively unstick yourself, especially when there isn’t anyone around to help you.</p>
+<p>Here are the steps I’ve followed, in order, when trying to get unblocked. These steps are specifically optimized for getting unstuck quickly and efficiently, but that shouldn’t be where you stop - try to really understand the system you’re working on. This will save time later on, especially if you’ll be working in the same codebase in the future.</p>
+<hr>
+<h1 id="1-Run-test-code"><a href="#1-Run-test-code" class="headerlink" title="1. Run test code."></a>1. <strong>Run test code.</strong></h1><p>  If what you’re trying to debug has tests, run them! The stack traces can lead you to where the problem might be. If there are no tests, write some!</p>
+<p>  Other tactics include (but are not limited to): putting print statements everywhere to figure out where in the program things went wrong, refactoring your code to make reasoning easier, looking at any logs or metrics you may have, or running a debugger to step through your code. (Although the last suggestion may not scale with larger or more complicated projects.)</p>
+<h1 id="2-Shamelessly-search-everything"><a href="#2-Shamelessly-search-everything" class="headerlink" title="2. Shamelessly search everything."></a>2. <strong>Shamelessly search everything.</strong></h1><p>  If you think you’ve identified the error or have a basic understanding of what to search for, other people may have faced the exact same problem as you are facing. Search on Google for a solution or any leads! (Be aware that Google searching can also lead you down the wrong path.)</p>
+<p>  If your organization uses Slack, Stack Overflow, Notion, or any database of past answered questions specific to the software you’re working on, now would be the time to utilize those resources. If you find a solution through your search, try to understand it as thoroughly as you can (as time permits) before moving on.</p>
+<h1 id="3-Look-at-existing-examples"><a href="#3-Look-at-existing-examples" class="headerlink" title="3. Look at existing examples."></a>3. <strong>Look at existing examples.</strong></h1><p>  Oftentimes you can look at old PRs or other examples of what you’re trying to accomplish and pattern match.</p>
+<p>  A lot of engineers use pattern matching to unblock themselves briefly without truly grokking the code they’re copy-pasting into their programs. Sometimes it’s necessary in the interest of time (or impatience), but more often than not this practice leads to bigger problems down the line when those engineers are forced to debug code they never really understood, with assumptions they’ve made about the code that are likely incorrect. I’ve been guilty of this in the past, unfortunately.</p>
+<p>  <strong>Don’t just stop at pattern matching.</strong> Try to figure out what is actually happening in the code that you’re writing.</p>
+<h1 id="4-Read-the-documentation"><a href="#4-Read-the-documentation" class="headerlink" title="4. Read the documentation."></a>4. <strong>Read the documentation.</strong></h1><p>  RTFM. Do the reading. Slow down. You may have a bad habit of just skipping to the part that you need to know. If you have the time, it doesn’t cost you to read the whole thing.</p>
+<p>  If you’re having trouble understanding a sentence, slow down and focus individually on each word you don’t understand. Try to understand those terms first, and then go back and reread the sentence. Have patience. Learning takes time and you won’t always get it after the first read, even if you’re the most intelligent human being in the world.</p>
+<h1 id="5-Read-the-code"><a href="#5-Read-the-code" class="headerlink" title="5. Read the code."></a>5. <strong>Read the code.</strong></h1><p>  If reading the documentation wasn’t as helpful as expected, or if there’s little or no documentation for the software you’re working on, try reading the source code. Focus on where functions are being called and what each function is doing. Take notes or draw diagrams in a notebook if it makes it easier for you to understand how moving pieces fit together. It may help at this point to identify or understand which moving piece the error is originating from, either by testing each piece sequentially, or turning things off and on again to see what works.</p>
+<p>  This step may not be as helpful, especially if the code is poorly documented/commented or organized in a way that doesn’t make sense to people who lack the necessary context.</p>
+<h1 id="6-Ask-for-help"><a href="#6-Ask-for-help" class="headerlink" title="6. Ask for help."></a>6. <strong>Ask for help.</strong></h1><p>  As important as the skill of self-learning is, an almost equally important skill is knowing when to stop banging your head against a brick wall. Sometimes the problem is just too insurmountable for you to solve on your own. Maybe you lack the necessary history and context that another engineer would know, or you’ve made an assumption that led you down the wrong rabbit hole for hours.</p>
+<p>  You need to know when to stop and ask for help. Don’t expect other engineers to ask if you need help, either - they may be afraid to patronize you. <strong>Don’t be afraid to ask for help when you need it.</strong> Sometimes I get scared that people will think I’m stupid for not being able to figure something out, especially if I’ve been stuck on that problem for awhile. If you’ve made a reasonable effort and you’re still blocked, it’s smarter to get someone’s help than to remain stuck for that much longer. <strong>Generally, I try to ask for help from a more experienced engineer if I’ve been blocked for more than one or two hours.</strong></p>
+<p>  Some senior engineers have told me that it can be difficult to fill in the gaps for someone whose context they no longer have. It’s like a rocket scientist trying to teach math to a fifth grader. They don’t remember what it’s like to be a fifth grader anymore. It is easier for them to teach when they assume you don’t know anything, and then ask you what you already understand as they’re teaching you.</p>
+<p>  <strong>Ways to help your fellow engineer better help <em>you</em></strong>:</p>
+<ol>
+<li><p>Being able to clearly identify when you don’t understand something <em>and being able to admit it</em>.</p>
+</li>
+<li><p>Having specific and detailed questions to ask.</p>
+</li>
+<li><p>Clearly communicating concepts that you already know or making connections between the new things they’re teaching you and what you already know.</p>
+</li>
+<li><p>Explaining the solutions you’ve already attempted, instead of asking for help by saying “I don’t know what’s happening or what this is doing.” and expecting the other engineer to do all the detective work for you.</p>
+</li>
+</ol>
+<hr>
+<p>You can do it! Getting unstuck gets easier as time goes on and you develop more of an intuition for the domain you’re working in. :)</p>
+
+  </div>
+</article>
+
+
+
+        <!-- removed because it was ugly on mobile -->
+        <!-- 
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/tags/blog">blog</a></li>
+         
+          <li><a href="/art/">art</a></li>
+         
+          <li><a href="/aquaria/">aquaria</a></li>
+         
+          <li><a href="/search/">🔍</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Run-test-code"><span class="toc-number">1.</span> <span class="toc-text">1. Run test code.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Shamelessly-search-everything"><span class="toc-number">2.</span> <span class="toc-text">2. Shamelessly search everything.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Look-at-existing-examples"><span class="toc-number">3.</span> <span class="toc-text">3. Look at existing examples.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Read-the-documentation"><span class="toc-number">4.</span> <span class="toc-text">4. Read the documentation.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Read-the-code"><span class="toc-number">5.</span> <span class="toc-text">5. Read the code.</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-Ask-for-help"><span class="toc-number">6.</span> <span class="toc-text">6. Ask for help.</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://mlyzhng.com/2019/02/16/getting-unstuck/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&text=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&is_video=false&description=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Getting Unstuck&body=Check out this article: https://mlyzhng.com/2019/02/16/getting-unstuck/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&title=Getting Unstuck" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://mlyzhng.com/2019/02/16/getting-unstuck/&name=Getting Unstuck&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> top</a>
+    </div>
+
+  </div>
+</div>
+
+         -->
+        <!-- <footer id="footer">
+  <div class="footer-left">
+    © 2020 Emily Zhang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/tags/blog">blog</a></li>
+         
+          <li><a href="/art/">art</a></li>
+         
+          <li><a href="/aquaria/">aquaria</a></li>
+         
+          <li><a href="/search/">🔍</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+ -->
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-135004607-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
